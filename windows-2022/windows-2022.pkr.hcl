@@ -12,7 +12,7 @@ variable "proxmox_api_url" { type = string }
 variable "proxmox_api_token_id" { type = string }
 variable "proxmox_api_token_secret" { type = string }
 variable "node" { default = "pve" }
-variable "pool" { default = "packer" }
+variable "pool" { default = "local-zfs" }
 
 # ---- Source ----
 source "proxmox-iso" "windows2022" {
@@ -28,12 +28,12 @@ source "proxmox-iso" "windows2022" {
   vm_name       = "win2022-base"
   template_name = "win2022-base"
   node          = var.node
-  pool          = var.pool
+  #pool          = var.pool
 
   # ✅ Correct modern boot_iso block
   boot_iso {
     iso_storage_pool = "local"
-    iso_file         = "iso/SERVER_2022_EVAL_x64FRE_en-us.iso"
+    iso_file         = "local:iso/SERVER_2022_EVAL_x64FRE_en-us.iso"
     iso_checksum     = "none"
     unmount          = true
   }
@@ -49,9 +49,9 @@ source "proxmox-iso" "windows2022" {
   }
 
   disks {
-    storage_pool = "local-lvm"
+    storage_pool = "local-zfs"
     disk_size    = "60G"
-    format       = "qcow2"
+    format       = "raw"
     type         = "scsi"
   }
 

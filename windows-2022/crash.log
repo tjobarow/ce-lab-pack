@@ -1,105 +1,105 @@
-2025/10/05 18:36:20 [INFO] Packer version: 1.14.2 [go1.23.2 darwin arm64]
-2025/10/05 18:36:20 [INFO] PACKER_CONFIG env var not set; checking the default config file path
-2025/10/05 18:36:20 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/kenward/.packerconfig
-2025/10/05 18:36:20 [WARN] Config file doesn't exist: /Users/kenward/.packerconfig
-2025/10/05 18:36:20 [INFO] Setting cache directory: /Users/kenward/.cache/packer
-2025/10/05 18:36:20 [TRACE] listing potential installations for "github.com/hashicorp/proxmox" that match ">= 1.2.2". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/kenward/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0x14000090f00)}}, ReleasesOnly:false}}
-2025/10/05 18:36:20 [TRACE] Found the following "github.com/hashicorp/proxmox" installations: [{/Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 v1.2.3 x5.0}]
-2025/10/05 18:36:20 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
-2025/10/05 18:36:20 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/kenward/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0x14000692000)}}, ReleasesOnly:false}}
-2025/10/05 18:36:20 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
-2025/10/05 18:36:20 [TRACE] validateValue: not active for pool, so skipping
-2025/10/05 18:36:20 [TRACE] validateValue: not active for proxmox_api_url, so skipping
-2025/10/05 18:36:20 [TRACE] validateValue: not active for proxmox_api_token_id, so skipping
-2025/10/05 18:36:20 [TRACE] validateValue: not active for proxmox_api_token_secret, so skipping
-2025/10/05 18:36:20 [TRACE] validateValue: not active for node, so skipping
-2025/10/05 18:36:20 [TRACE] Using protobuf for communication with plugins
-2025/10/05 18:36:20 [INFO] Starting external plugin /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 start builder --protobuf iso
-2025/10/05 18:36:20 Starting plugin: /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 []string{"/Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64", "start", "builder", "--protobuf", "iso"}
-2025/10/05 18:36:20 Waiting for RPC address for: /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 Plugin address: unix /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin1780300536
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 Waiting for connection...
-2025/10/05 18:36:20 Received unix RPC address for /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64: addr is /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin1780300536
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 Serving a plugin connection...
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 [TRACE] starting builder iso
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 [DEBUG] - common: sending ConfigSpec as protobuf
-2025/10/05 18:36:20 [DEBUG] - common: receiving ConfigSpec as protobuf
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 additional_iso 0 device type not set, using default 'ide'
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 additional_iso 1 device type not set, using default 'ide'
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 Disk 0 cache mode not set, using default 'none'
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 SCSI controller not set, using default 'lsi'
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 boot_iso device type not set, using default type 'ide' and index '2'
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 [DEBUG] - common: sending ConfigSpec as protobuf
-2025/10/05 18:36:20 [DEBUG] - common: receiving ConfigSpec as protobuf
-2025/10/05 18:36:20 [INFO] Starting external plugin /opt/homebrew/bin/packer execute --protobuf packer-provisioner-powershell
-2025/10/05 18:36:20 Starting plugin: /opt/homebrew/bin/packer []string{"/opt/homebrew/bin/packer", "execute", "--protobuf", "packer-provisioner-powershell"}
-2025/10/05 18:36:20 Waiting for RPC address for: /opt/homebrew/bin/packer
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [INFO] Packer version: 1.14.2 [go1.23.2 darwin arm64]
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/kenward/.packerconfig
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [WARN] Config file doesn't exist: /Users/kenward/.packerconfig
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [INFO] Setting cache directory: /Users/kenward/.cache/packer
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: Plugin address: unix /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin217499940
-2025/10/05 18:36:20 Received unix RPC address for /opt/homebrew/bin/packer: addr is /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin217499940
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: Waiting for connection...
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: Serving a plugin connection...
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
-2025/10/05 18:36:20 [DEBUG] - common: receiving ConfigSpec as protobuf
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: Using script default execute command powershell -executionpolicy bypass "& { if (Test-Path variable:global:ProgressPreference){set-variable -name variable:global:ProgressPreference -value 'SilentlyContinue'};. {{.Vars}}; &'{{.Path}}'; exit $LastExitCode }"
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: Using script default elevated execute command powershell -executionpolicy bypass "& { if (Test-Path variable:global:ProgressPreference){set-variable -name variable:global:ProgressPreference -value 'SilentlyContinue'};. {{.Vars}}; &'{{.Path}}'; exit $LastExitCode }"
-2025/10/05 18:36:20 packer-provisioner-powershell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
-2025/10/05 18:36:20 [DEBUG] - common: receiving ConfigSpec as protobuf
-2025/10/05 18:36:20 ui: [1;32mwin2022-base.proxmox-iso.windows2022: output will be in this color.[0m
-2025/10/05 18:36:20 ui: 
-2025/10/05 18:36:20 Build debug mode: false
-2025/10/05 18:36:20 Force build: false
-2025/10/05 18:36:20 On error: 
-2025/10/05 18:36:20 Waiting on builds to complete...
-2025/10/05 18:36:20 Starting build run: win2022-base.proxmox-iso.windows2022
-2025/10/05 18:36:20 Running builder: proxmox-iso
-2025/10/05 18:36:20 [INFO] (telemetry) Starting builder proxmox-iso.windows2022
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 using token auth
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No CD files specified. CD disk will not be made.
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No URLs were provided to Step Download. Continuing...
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No CD files specified. CD disk will not be made.
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No URLs were provided to Step Download. Continuing...
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No CD files specified. CD disk will not be made.
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:36:20 No URLs were provided to Step Download. Continuing...
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: panic: runtime error: index out of range [1] with length 1
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: goroutine 11 [running]:
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.generateProxmoxDisks({0x1400013d200, 0x1, 0x140007a3a38?}, {0x1400048e008, 0x3, 0x104ce3c58?}, {0x0, 0x0, 0x140007a3a78?})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/step_start_vm.go:340 +0x3b7c
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.(*stepStartVM).Run(0x14000654040, {0x10573a2b5?, 0x14000166050?}, {0x105ca4760, 0x14000480090})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/step_start_vm.go:110 +0x194
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-sdk/multistep.(*BasicRunner).Run(0x140004801b0, {0x105ca4a38, 0x14000166050}, {0x105ca4760, 0x14000480090})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.6.1/multistep/basic_runner.go:73 +0x270
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.(*Builder).Run(0x14000781808, {0x105ca4a38, 0x14000166050}, {0x105caa8e0, 0x14000484080}, {0x105c978c0, 0x14000480060}, {0x105ca4760, 0x14000480090})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/builder.go:111 +0xb9c
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/iso.(*Builder).Run(0x140004f8d08, {0x105ca4a38, 0x14000166050}, {0x105caa8e0, 0x14000484080}, {0x105c978c0, 0x14000480060})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/iso/builder.go:47 +0x2ac
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-sdk/rpc.(*BuilderServer).Run(0x140006100a0, 0x4d0c808?, 0x14000513b30)
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.6.1/rpc/builder.go:120 +0x1a4
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: reflect.Value.call({0x14000556240?, 0x1400053c110?, 0x13?}, {0x105733ad7, 0x4}, {0x14000205ef8, 0x3, 0x3?})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	reflect/value.go:584 +0x97c
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: reflect.Value.Call({0x14000556240?, 0x1400053c110?, 0x14000556060?}, {0x1400012d6f8?, 0xc?, 0x105414f74?})
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	reflect/value.go:368 +0x94
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: net/rpc.(*service).call(0x1400060e080, 0x1400060e040, 0x14000200038, 0x14000200040, 0x1400013c180, 0x14000600160, {0x105a77fc0?, 0x14000513b2c?, 0x0?}, {0x105a46980?, ...}, ...)
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	net/rpc/server.go:381 +0x200
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: created by net/rpc.(*Server).ServeCodec in goroutine 1
-2025/10/05 18:36:20 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	net/rpc/server.go:478 +0x2c4
-2025/10/05 18:36:20 [INFO] (telemetry) ending proxmox-iso.windows2022
-2025/10/05 18:36:20 /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64: plugin process exited
-2025/10/05 18:36:20 ui error: [1;31mBuild 'win2022-base.proxmox-iso.windows2022' errored after 4 milliseconds 759 microseconds: unexpected EOF[0m
-2025/10/05 18:36:20 ui: 
-==> Wait completed after 4 milliseconds 779 microseconds
-2025/10/05 18:36:20 machine readable: error-count []string{"1"}
-2025/10/05 18:36:20 ui error: 
+2025/10/05 18:43:24 [INFO] Packer version: 1.14.2 [go1.23.2 darwin arm64]
+2025/10/05 18:43:24 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/10/05 18:43:24 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/kenward/.packerconfig
+2025/10/05 18:43:24 [WARN] Config file doesn't exist: /Users/kenward/.packerconfig
+2025/10/05 18:43:24 [INFO] Setting cache directory: /Users/kenward/.cache/packer
+2025/10/05 18:43:24 [TRACE] listing potential installations for "github.com/hashicorp/proxmox" that match "= 1.2.3". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/kenward/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0x14000644f00)}}, ReleasesOnly:false}}
+2025/10/05 18:43:24 [TRACE] Found the following "github.com/hashicorp/proxmox" installations: [{/Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 v1.2.3 x5.0}]
+2025/10/05 18:43:24 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2025/10/05 18:43:24 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/kenward/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0x140006de280)}}, ReleasesOnly:false}}
+2025/10/05 18:43:24 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2025/10/05 18:43:24 [TRACE] validateValue: not active for pool, so skipping
+2025/10/05 18:43:24 [TRACE] validateValue: not active for proxmox_api_url, so skipping
+2025/10/05 18:43:24 [TRACE] validateValue: not active for proxmox_api_token_id, so skipping
+2025/10/05 18:43:24 [TRACE] validateValue: not active for proxmox_api_token_secret, so skipping
+2025/10/05 18:43:24 [TRACE] validateValue: not active for node, so skipping
+2025/10/05 18:43:24 [TRACE] Using protobuf for communication with plugins
+2025/10/05 18:43:24 [INFO] Starting external plugin /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 start builder --protobuf iso
+2025/10/05 18:43:24 Starting plugin: /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 []string{"/Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64", "start", "builder", "--protobuf", "iso"}
+2025/10/05 18:43:24 Waiting for RPC address for: /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 Plugin address: unix /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin2586562579
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 Waiting for connection...
+2025/10/05 18:43:24 Received unix RPC address for /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64: addr is /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin2586562579
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 Serving a plugin connection...
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 [TRACE] starting builder iso
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 [DEBUG] - common: sending ConfigSpec as protobuf
+2025/10/05 18:43:24 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 additional_iso 0 device type not set, using default 'ide'
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 additional_iso 1 device type not set, using default 'ide'
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 Disk 0 cache mode not set, using default 'none'
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 SCSI controller not set, using default 'lsi'
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 boot_iso device type not set, using default type 'ide' and index '2'
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 [DEBUG] - common: sending ConfigSpec as protobuf
+2025/10/05 18:43:24 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/10/05 18:43:24 [INFO] Starting external plugin /opt/homebrew/bin/packer execute --protobuf packer-provisioner-powershell
+2025/10/05 18:43:24 Starting plugin: /opt/homebrew/bin/packer []string{"/opt/homebrew/bin/packer", "execute", "--protobuf", "packer-provisioner-powershell"}
+2025/10/05 18:43:24 Waiting for RPC address for: /opt/homebrew/bin/packer
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [INFO] Packer version: 1.14.2 [go1.23.2 darwin arm64]
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/kenward/.packerconfig
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [WARN] Config file doesn't exist: /Users/kenward/.packerconfig
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [INFO] Setting cache directory: /Users/kenward/.cache/packer
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: Plugin address: unix /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin3229983891
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: Waiting for connection...
+2025/10/05 18:43:24 Received unix RPC address for /opt/homebrew/bin/packer: addr is /var/folders/lb/h_0f3b597n9crqn8vc28dgtc0000gn/T/packer-plugin3229983891
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: Serving a plugin connection...
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/10/05 18:43:24 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: Using script default execute command powershell -executionpolicy bypass "& { if (Test-Path variable:global:ProgressPreference){set-variable -name variable:global:ProgressPreference -value 'SilentlyContinue'};. {{.Vars}}; &'{{.Path}}'; exit $LastExitCode }"
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: Using script default elevated execute command powershell -executionpolicy bypass "& { if (Test-Path variable:global:ProgressPreference){set-variable -name variable:global:ProgressPreference -value 'SilentlyContinue'};. {{.Vars}}; &'{{.Path}}'; exit $LastExitCode }"
+2025/10/05 18:43:24 packer-provisioner-powershell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/10/05 18:43:24 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/10/05 18:43:24 ui: [1;32mwin2022-base.proxmox-iso.windows2022: output will be in this color.[0m
+2025/10/05 18:43:24 ui: 
+2025/10/05 18:43:24 Build debug mode: false
+2025/10/05 18:43:24 Force build: false
+2025/10/05 18:43:24 On error: 
+2025/10/05 18:43:24 Waiting on builds to complete...
+2025/10/05 18:43:24 Starting build run: win2022-base.proxmox-iso.windows2022
+2025/10/05 18:43:24 Running builder: proxmox-iso
+2025/10/05 18:43:24 [INFO] (telemetry) Starting builder proxmox-iso.windows2022
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 using token auth
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No CD files specified. CD disk will not be made.
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No URLs were provided to Step Download. Continuing...
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No CD files specified. CD disk will not be made.
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No URLs were provided to Step Download. Continuing...
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No CD files specified. CD disk will not be made.
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 2025/10/05 18:43:24 No URLs were provided to Step Download. Continuing...
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: panic: runtime error: index out of range [1] with length 1
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: goroutine 13 [running]:
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.generateProxmoxDisks({0x140000a4580, 0x1, 0x1400044da38?}, {0x1400040a388, 0x3, 0x100fbbc58?}, {0x0, 0x0, 0x1400044da78?})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/step_start_vm.go:340 +0x3b7c
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.(*stepStartVM).Run(0x1400004c0b0, {0x101a122b5?, 0x140004261e0?}, {0x101f7c760, 0x140005c12c0})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/step_start_vm.go:110 +0x194
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-sdk/multistep.(*BasicRunner).Run(0x140005c1440, {0x101f7ca38, 0x140004261e0}, {0x101f7c760, 0x140005c12c0})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.6.1/multistep/basic_runner.go:73 +0x270
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common.(*Builder).Run(0x14000716808, {0x101f7ca38, 0x140004261e0}, {0x101f828e0, 0x14000417080}, {0x101f6f8c0, 0x140005c1290}, {0x101f7c760, 0x140005c12c0})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common/builder.go:111 +0xb9c
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/iso.(*Builder).Run(0x140006e4d08, {0x101f7ca38, 0x140004261e0}, {0x101f828e0, 0x14000417080}, {0x101f6f8c0, 0x140005c1290})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/iso/builder.go:47 +0x2ac
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: github.com/hashicorp/packer-plugin-sdk/rpc.(*BuilderServer).Run(0x1400003a960, 0xfe4808?, 0x14000119c90)
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	github.com/hashicorp/packer-plugin-sdk@v0.6.1/rpc/builder.go:120 +0x1a4
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: reflect.Value.call({0x14000138f00?, 0x14000120d38?, 0x13?}, {0x101a0bad7, 0x4}, {0x1400016bef8, 0x3, 0x3?})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	reflect/value.go:584 +0x97c
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: reflect.Value.Call({0x14000138f00?, 0x14000120d38?, 0x0?}, {0x14000294ef8?, 0x0?, 0x0?})
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	reflect/value.go:368 +0x94
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: net/rpc.(*service).call(0x140000fe940, 0x140000fe900, 0x14000118028, 0x14000118030, 0x140007c4100, 0x14000784160, {0x101d4ffc0?, 0x14000119c8c?, 0x0?}, {0x101d1e980?, ...}, ...)
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	net/rpc/server.go:381 +0x200
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: created by net/rpc.(*Server).ServeCodec in goroutine 1
+2025/10/05 18:43:24 packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64 plugin: 	net/rpc/server.go:478 +0x2c4
+2025/10/05 18:43:24 /Users/kenward/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_darwin_arm64: plugin process exited
+2025/10/05 18:43:24 [INFO] (telemetry) ending proxmox-iso.windows2022
+2025/10/05 18:43:24 ui error: [1;31mBuild 'win2022-base.proxmox-iso.windows2022' errored after 5 milliseconds 338 microseconds: unexpected EOF[0m
+2025/10/05 18:43:24 ui: 
+==> Wait completed after 5 milliseconds 366 microseconds
+2025/10/05 18:43:24 machine readable: error-count []string{"1"}
+2025/10/05 18:43:24 ui error: 
 ==> Some builds didn't complete successfully and had errors:
-2025/10/05 18:36:20 machine readable: win2022-base.proxmox-iso.windows2022,error []string{"unexpected EOF"}
-2025/10/05 18:36:20 ui error: --> win2022-base.proxmox-iso.windows2022: unexpected EOF
-2025/10/05 18:36:20 ui: 
+2025/10/05 18:43:24 machine readable: win2022-base.proxmox-iso.windows2022,error []string{"unexpected EOF"}
+2025/10/05 18:43:24 ui error: --> win2022-base.proxmox-iso.windows2022: unexpected EOF
+2025/10/05 18:43:24 ui: 
 ==> Builds finished but no artifacts were created.
-2025/10/05 18:36:20 [INFO] (telemetry) Finalizing.
-2025/10/05 18:36:20 waiting for all plugin processes to complete...
-2025/10/05 18:36:20 /opt/homebrew/bin/packer: plugin process exited
+2025/10/05 18:43:24 [INFO] (telemetry) Finalizing.
+2025/10/05 18:43:24 waiting for all plugin processes to complete...
+2025/10/05 18:43:24 /opt/homebrew/bin/packer: plugin process exited
