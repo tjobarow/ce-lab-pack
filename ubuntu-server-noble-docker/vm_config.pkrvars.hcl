@@ -1,0 +1,11 @@
+vm_id = 2001
+vm_domain="obarowski.org"
+iso_storage_pool = "hdd_storage_4tb"
+iso_file         = "iso/ubuntu-24.04.3-live-server-amd64.iso"
+iso_checksum     = "sha256:C3514BF0056180D09376462A7A1B4F213C1D6E8EA67FAE5C25099C6FD3D8274B"
+disk_storage = "nvme_flash_2tb"
+network_interface_bridge = "vmbr1"
+network_vlan_id          = "202"
+cores="2"
+memory_size="2048"
+disk_size="25G"

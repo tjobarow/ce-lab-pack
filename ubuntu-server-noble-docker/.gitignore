@@ -1,0 +1,4 @@
+**/credentials.pkr.hcl
+secrets.pkrvars.hcl
+id_labadmin_ecdsa.priv
+id_labadmin_ecdsa.pub

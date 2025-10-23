@@ -1,0 +1,60 @@
+#cloud-config
+hostname: lab-ubuntu-server-1
+fqdn: lab-ubuntu-server-1.${vm_domain}
+timezone: America/New_York
+
+# During installation
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: us
+  network:
+    version: 2
+    renderer: networkd
+    ethernets:
+      en-all:
+        match:
+          name: "en*"
+        dhcp4: true
+        dhcp6: false
+        optional: true
+  ssh:
+    install-server: true
+    allow-pw: true
+    disable_root: true
+    ssh_quiet_keygen: true
+    allow_public_ssh_keys: true
+  packages:
+    - qemu-guest-agent
+    - sudo
+    - python3-pip
+    - realmd
+    - adcli
+    - oddjob
+    - oddjob-mkhomedir
+    - samba-common
+    - packagekit
+    - net-tools
+    - dnsutils
+    - nmap
+    - traceroute
+    - tcpdump
+  storage:
+    layout:
+      name: direct
+    swap:
+      size: 0
+  user-data:
+    package_upgrade: false
+    timezone: America/New_York
+    users:
+      - name: labadmin
+        groups: [adm, sudo]
+        lock-passwd: false
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        shell: /bin/bash
+        # SHA512 hashed password - used mkpadsswd --method=SHA-512 'passwordhere' to generate (comes with 'whois' package)
+        passwd: $6$2VkBTY86jJBUSkg0$TDXhmFMJjx3SRyJNnXz7tFSGwyTrFjpAzMIkMb5x.f001LNPpuCqsHdSlNEqXPDmqu9AVr2vvuDPM8ec3z0a3.
+        ssh_authorized_keys:
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFX0xCdPtOXSchUzkETQL93kNy0bINE+Jlgo7pdxl9Yl

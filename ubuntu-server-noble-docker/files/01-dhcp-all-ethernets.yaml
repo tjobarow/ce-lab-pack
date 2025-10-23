@@ -1,0 +1,11 @@
+# 01-dhcp-all-en.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    en-all:
+      match:
+        name: "en*"
+      dhcp4: true
+      dhcp6: false
+      optional: true
