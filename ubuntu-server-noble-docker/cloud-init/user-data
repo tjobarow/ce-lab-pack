@@ -1,7 +1,8 @@
 #cloud-config
-hostname: lab-ubuntu-server-1
-fqdn: lab-ubuntu-server-1.${vm_domain}
+hostname: PRX-PROD-UB001
+fqdn: PRX-PROD-UB001.${vm_domain}
 timezone: America/New_York
+preserve_hostname: true
 
 # During installation
 autoinstall:
@@ -34,6 +35,7 @@ autoinstall:
     - oddjob
     - oddjob-mkhomedir
     - samba-common
+    - krb5-user
     - packagekit
     - net-tools
     - dnsutils
